@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
         if (err) {
             throw err;
         }
-        content = data;
+        content = buffer.toString();
     });
     response.send(content);
 });
