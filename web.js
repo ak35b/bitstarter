@@ -10,7 +10,8 @@ app.get('/', function(request, response) {
         }
         content = data;
     });
-    response.send('klklklklklk');
+   content = Buffer.toString('utf8');
+  response.send(content+'fklklklklk');
 });
 
 var port = process.env.PORT || 5000;
