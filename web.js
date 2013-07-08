@@ -4,13 +4,14 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
  var content;
-    fs.readFileSync('index.html','utf8', function read(err, data) {
+    fs.readFileSync('index.html', function read(err, data) {
         if (err) {
             throw err;
         }
         content = data;
     });
-   content = Buffer.toString('utf8');
+   
+
   response.send(content+'fklklklklk');
 });
 
