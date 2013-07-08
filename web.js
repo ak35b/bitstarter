@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
         }
         content = data;
     });
-    response.send(content);
+    response.send('klklklklklk');
 });
 
 var port = process.env.PORT || 5000;
